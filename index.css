@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.full-width-block {
+    width: 100%;
+    border: 5px solid purple;
+    margin: 10px 0px;
+    padding: 15px 0px;
+    float: right;
+}
+
+.width-20-block {
+    display: inline-block;
+    width: 20%;
+    border: 5px solid red;
+    padding: 15px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+}
+
+.width-75-block {
+    display: inline-block;
+    width: 75%;
+    border: 5px solid green;
+    padding: 15px;
+    float: right;
+    margin-bottom: 10px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    display: block;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}

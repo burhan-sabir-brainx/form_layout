@@ -14,9 +14,9 @@ body {
     float: right;
 }
 
-.width-20-block {
+.width-22-block {
     display: inline-block;
-    width: 20%;
+    width: 100%;
     border: 5px solid red;
     padding: 15px;
     margin-bottom: 10px;
@@ -26,7 +26,7 @@ body {
 
 .width-75-block {
     display: inline-block;
-    width: 75%;
+    width: 100%;
     border: 5px solid green;
     padding: 15px;
     float: right;
@@ -35,6 +35,7 @@ body {
 .flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 label{
     display: block;
@@ -43,4 +44,13 @@ input, textarea {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+    .width-22-block{
+        width: 22%;
+    }
+    .width-75-block{
+        width: 75%;
+    }
+    
 }
